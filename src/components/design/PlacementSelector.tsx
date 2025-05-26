@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { X } from 'lucide-react';
+import { X, FileImage } from 'lucide-react';
 import type { PlacementPosition, UploadedFile } from './DesignCustomizer';
 
 interface PlacementSelectorProps {
