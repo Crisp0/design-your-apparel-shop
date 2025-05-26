@@ -1,9 +1,11 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Sparkles, PlayCircle } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-50 min-h-[90vh] flex items-center">
       <div className="absolute inset-0 opacity-40">
@@ -38,6 +40,7 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-full text-base font-medium shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                onClick={() => navigate('/design')}
               >
                 Start Creating
                 <ArrowRight className="ml-3 h-5 w-5" />
@@ -98,7 +101,10 @@ const Hero = () => {
                     ))}
                   </div>
                 </div>
-                <Button className="w-full bg-gray-600 hover:bg-gray-700 text-white rounded-full py-3 font-medium">
+                <Button 
+                  className="w-full bg-gray-600 hover:bg-gray-700 text-white rounded-full py-3 font-medium"
+                  onClick={() => navigate('/design')}
+                >
                   Customize Now
                 </Button>
               </div>
