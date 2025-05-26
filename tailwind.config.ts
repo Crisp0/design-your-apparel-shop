@@ -63,18 +63,18 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom brand colors inspired by the references
-				brand: {
-					burgundy: '#8B1538',
-					'burgundy-light': '#A91D47',
-					'burgundy-dark': '#6B1028',
-					sage: '#9CAF88',
-					'sage-light': '#B5C5A8',
-					'sage-dark': '#7A9B6B',
-					cream: '#F5F2E8',
-					'neutral-warm': '#F8F6F3',
-					teal: '#4A6B6B',
-					'teal-light': '#6B8B8B'
+				// Elegant brand colors inspired by premium design
+				elegant: {
+					charcoal: '#2C3E50',
+					'charcoal-light': '#34495E',
+					'charcoal-dark': '#1C2833',
+					stone: '#95A5A6',
+					'stone-light': '#BDC3C7',
+					'stone-dark': '#7F8C8D',
+					pearl: '#ECF0F1',
+					'pearl-warm': '#F8F9FA',
+					slate: '#5D6D7E',
+					'slate-light': '#85929E'
 				}
 			},
 			borderRadius: {
@@ -102,7 +102,7 @@ export default {
 				'fade-in': {
 					'0%': {
 						opacity: '0',
-						transform: 'translateY(10px)'
+						transform: 'translateY(20px)'
 					},
 					'100%': {
 						opacity: '1',
@@ -118,13 +118,32 @@ export default {
 						transform: 'scale(1)',
 						opacity: '1'
 					}
+				},
+				'slide-up': {
+					'0%': {
+						transform: 'translateY(30px)',
+						opacity: '0'
+					},
+					'100%': {
+						transform: 'translateY(0)',
+						opacity: '1'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'fade-in': 'fade-in 0.6s ease-out',
-				'scale-in': 'scale-in 0.3s ease-out'
+				'fade-in': 'fade-in 0.8s ease-out',
+				'scale-in': 'scale-in 0.4s ease-out',
+				'slide-up': 'slide-up 0.6s ease-out'
+			},
+			fontFamily: {
+				'playfair': ['Playfair Display', 'serif'],
+				'inter': ['Inter', 'sans-serif'],
+			},
+			spacing: {
+				'18': '4.5rem',
+				'88': '22rem',
 			}
 		}
 	},
